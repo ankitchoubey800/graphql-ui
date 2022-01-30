@@ -7,7 +7,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
   uri: "https://localhost:44340/graphql",
-  cache: InMemoryCache(),
+  cache: new InMemoryCache(),
   //if you hit the same graphql query again, it would fetch it from the in-memory cache.
 });
 
